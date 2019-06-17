@@ -9,8 +9,6 @@ namespace _3P_tb003_TemaLivre
         private TCor cor_Pelo;
 
         public string Cor_Pelo { set { cor_Pelo.Nome_cor = value; } }
-        public string Comportamento { set { comportamento = value; } }
-        public int Expectativa { set { expectativa_vida = value; } }
 
         public Cachorro(double peso,double altura):base(peso,altura)
         {

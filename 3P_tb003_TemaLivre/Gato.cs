@@ -12,10 +12,6 @@ namespace _3P_tb003_TemaLivre
 
         public string Cor_Olhos { set => cor_Olhos.Nome_cor = value; }
 
-        public string Comportamento { set { comportamento = value; } }
-
-        public int Expectativa { set { expectativa_vida = value; } }
-
         public string Unhas { set => unhas = value; }
 
         public Gato(double peso, double altura) : base(peso, altura)
