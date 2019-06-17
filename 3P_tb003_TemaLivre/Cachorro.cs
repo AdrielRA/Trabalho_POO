@@ -26,7 +26,7 @@ namespace _3P_tb003_TemaLivre
         }
        override public string Mostra_Caracteristicas()
         {
-            return base.Mostra_Caracteristicas() +"Cor do Pelo :"+ Cor_Pelo +"Som :" +Falar();
+            return base.Mostra_Caracteristicas()+"Caracteristicas do cão :\n"+"Cor do Pelo :"+ cor_Pelo.Nome_cor +"Som :" +Falar();
         }
     }
 }
