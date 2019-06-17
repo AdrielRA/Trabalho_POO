@@ -4,15 +4,29 @@ using System.Text;
 
 namespace _3P_tb003_TemaLivre
 {
-    class Cachorro
+    class Cachorro:Animal
     {
-        private string raca;
-        private double peso;
+        private TCor cor_Pelo;
+        private string comportamento_cachorro;
+        private int expectativa;
 
-        public string Raca { get { return raca; } set { raca = value; } }
-        public double Peso { get { return peso; } set { peso = value; } }
+        public string Cor_Pelo { set { cor_Pelo.Nome_cor = value; } }
+        public string Comportamento { set { comportamento_cachorro = value; } }
+        public int Expectativa { set { expectativa = value; } }
 
-        public Cachorro() { }//AQUI INICIALIZA A LISTA TAMBÉM ?
+        public Cachorro(double peso,double altura):base(peso,altura)
+        {
+           
+        }
 
+        override public string Falar()
+        {
+            string aux = "Auauau";
+            return aux;
+        }
+       override public string Mostra_Caracteristicas()
+        {
+            return base.Mostra_Caracteristicas() +"Cor do Pelo :"+ Cor_Pelo +"Som :" +Falar();
+        }
     }
 }
